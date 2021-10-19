@@ -1,14 +1,20 @@
 zuul:
   routes:
-    get:
-      path: /get/**
-      url: http://httpbin.org/get
-    links:
-      path: /links/**
-      url: http://httpbin.org/links
-    images:
-      path: /image/**
-      url: http://httpbin.org/image
+    empleado:
+      path: /empleado/**
+      url: http://localhost:9002/api/empleado/
+    cliente:
+      path: /cliente/**
+      url: http://localhost:9002/api/cliente/
+    obra:
+      path: /obra/**
+      url: http://localhost:9002/api/obra/
+    pedido:
+      path: /pedido/**
+      url: http://localhost:9000/api/pedido/
+    material:
+      path: /material/**
+      url: http://localhost:9001/api/material
 
 eureka:
   client:
